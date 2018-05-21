@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/iv_search_book"
+        tools:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_search_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:textSize="16sp"
+        tools:text="Keeping Score For All"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>

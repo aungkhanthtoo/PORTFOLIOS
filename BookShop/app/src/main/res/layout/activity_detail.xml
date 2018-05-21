@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2b2b2"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:paddingTop="8dp"
+    tools:context=".DetailActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_detail_book"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextSwitcher
+                    android:id="@+id/textSwitcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:background="@color/colorPrimary"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right" />
+
+
+                <TextView
+                    android:id="@+id/textView_description_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="120dp"
+                    android:background="@drawable/description_background"
+                    android:padding="8dp"
+                    android:text="This is description text."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/secondary_text_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/anchor_view"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_label_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/textView_price_book"
+                android:padding="16dp"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/textView_price_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_label_price"
+                android:layout_alignParentEnd="true"
+                android:padding="16dp"
+                android:text="1000" />
+
+            <TextView
+                android:id="@+id/textView_label_pubdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label_price"
+                android:labelFor="@id/textView_pubdate_book"
+                android:padding="16dp"
+                android:text="Publishing date" />
+
+            <TextView
+                android:id="@+id/textView_pubdate_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView_price_book"
+                android:padding="16dp"
+                android:text="2016-10-08"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textView_label_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_label_pubdate"
+                android:labelFor="@id/textView_publisher_book"
+                android:padding="16dp"
+                android:text="Publisher" />
+
+            <TextView
+                android:id="@+id/textView_publisher_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView_label_publisher"
+                android:padding="16dp"
+                android:text="Pone Nya Khin" />
+
+            <TextView
+                android:id="@+id/textView_label_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_label_publisher"
+                android:labelFor="@id/textView_genre_book"
+                android:padding="16dp"
+                android:text="Genre" />
+
+            <TextView
+                android:id="@+id/textView_genre_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView_publisher_book"
+                android:padding="16dp"
+                android:text="Children" />
+
+            <com.dmitrymalkovich.android.ProgressFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:clickable="true">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_download" />
+                <ProgressBar
+                    android:id="@+id/fab_progress"
+                    android:indeterminateTint="@color/colorPrimaryDark"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.lay.htoo.tinykeeper.EditorActivity">
+
+    <ImageView
+        android:id="@+id/imageView_item_pic"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cart" />
+
+    <EditText
+        android:id="@+id/textField_name"
+        style="@style/InputStyle"
+        android:drawableLeft="@drawable/ic_item_name"
+        android:drawableStart="@drawable/ic_item_name"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        style="@style/InputStyle"
+        android:paddingTop="0dp">
+
+        <EditText
+            android:id="@+id/textField_buy_price"
+            style="@style/InputStyle"
+            android:drawableLeft="@drawable/ic_item_price"
+            android:drawableStart="@drawable/ic_item_price"
+            android:hint="Buy"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="24dp"
+            android:text="@string/ks"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/InputStyle"
+        android:paddingTop="0dp">
+
+        <EditText
+            android:id="@+id/textField_sell_price"
+            style="@style/InputStyle"
+            android:drawableLeft="@drawable/ic_item_price"
+            android:drawableStart="@drawable/ic_item_price"
+            android:hint="Sell"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="24dp"
+            android:text="@string/ks"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/textField_qty"
+        style="@style/InputStyle"
+        android:drawableLeft="@drawable/ic_item_quantity"
+        android:drawableStart="@drawable/ic_item_quantity"
+        android:hint="@string/quantity"
+        android:inputType="number" />
+
+    <RelativeLayout
+        android:id="@+id/modify_qty_view"
+        style="@style/InputStyle">
+
+        <EditText
+            android:id="@+id/textField_change_qty"
+            style="@style/InputStyle"
+            android:hint="@string/change_qty"
+            android:inputType="number"
+            android:paddingLeft="44dp"
+            android:paddingStart="44dp"
+            android:paddingTop="0dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout_decrease"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_decrease">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:onClick="decreaseQty" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout_increase"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_increase"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:onClick="increaseQty"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/textField_supplier"
+        style="@style/InputStyle"
+        android:drawableLeft="@drawable/ic_supplier_name"
+        android:drawableStart="@drawable/ic_supplier_name"
+        android:hint="@string/supplier"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textField_supplier_phone"
+        style="@style/InputStyle"
+        android:drawableLeft="@drawable/ic_supplier_phone"
+        android:drawableStart="@drawable/ic_supplier_phone"
+        android:hint="@string/supplier_phone"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button_order_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background"
+        android:text="Order more"
+        android:padding="8dp"
+        android:onClick="orderMore"/>
+
+</LinearLayout>

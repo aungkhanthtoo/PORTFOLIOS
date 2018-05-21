@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8c5c46</color>
+    <color name="colorPrimaryDark">#5c321e</color>
+    <color name="colorAccent">#aad180</color>
+    <color name="colorGridDecor">#40ffd180</color>
+    <color name="recycler_background">#ffd180</color>
+    <color name="colorGridBackgroundDecor">#90ffd180</color>
+
+    <color name="orange_200">#FFCC80</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_create_book"
+        android:title="book"
+        android:orderInCategory="10"/>
+    <item android:id="@+id/action_create_author"
+        android:title="author"
+        android:orderInCategory="20"/>
+    <item android:id="@+id/action_create_gender"
+        android:title="gender"
+        android:orderInCategory="30"/>
+    <item android:id="@+id/action_create_publisher"
+        android:title="publisher"
+        android:orderInCategory="40"/>
+
+</menu>

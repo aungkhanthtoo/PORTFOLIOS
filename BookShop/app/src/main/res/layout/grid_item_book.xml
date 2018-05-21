@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_item_background_bottom"
+        android:paddingEnd="2dp">
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grid_item_background_paper"
+            android:paddingEnd="4dp">
+
+            <FrameLayout
+                android:id="@+id/image_container_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grid_item_background"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/image_grid_book"
+                    android:layout_width="105dp"
+                    android:layout_height="188dp"
+                    android:contentDescription="@string/book_cover_description"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_grid_book_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/image_container"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_action_delete"
+        android:backgroundTint="@android:color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone" />
+</RelativeLayout>

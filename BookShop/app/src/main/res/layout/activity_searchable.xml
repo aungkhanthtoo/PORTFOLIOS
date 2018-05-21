@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+       <AutoCompleteTextView
+           android:padding="16dp"
+           android:id="@+id/auto_complete_search"
+           android:inputType="text"
+           android:imeOptions="actionSearch"
+           android:layout_width="match_parent"
+           android:layout_height="56dp"
+           android:drawableEnd="@drawable/ic_action_search"
+           android:hint="@string/search_hint"
+           android:layout_marginBottom="16dp"
+           android:textColor="@android:color/white"
+           android:textColorHint="@android:color/white"
+           android:background="@drawable/list_item_backgroud"
+           />
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"/>
+    <TextView android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#a5c8d4"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:text="No Book Found!"
+        />
+</LinearLayout>

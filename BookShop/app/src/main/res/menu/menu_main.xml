@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.projects.aungkhanthtoo.bookshop.MainActivity">
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="@string/action_login"
+        app:showAsAction="never" />
+    <group android:id="@+id/action_admin_group" android:orderInCategory="10"
+        android:visible="false">
+        <item android:id="@+id/action_logout"
+            android:title="@string/action_logout"
+            app:showAsAction="never"/>
+        <item android:id="@+id/action_create"
+            android:title="@string/action_create"
+            app:showAsAction="never"/>
+    </group>
+</menu>

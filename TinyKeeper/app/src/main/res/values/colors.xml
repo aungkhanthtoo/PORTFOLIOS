@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009246</color>
+    <color name="colorPrimaryDark">#1a472a</color>
+    <color name="colorAccent"> #ce2b37</color>
+    <!-- Background of lisView -->
+    <color name="colorBackground">#f2f2f2</color>
+    <!-- Editor activity's primary color.-->
+    <color name="editorColorPrimary">#32ab9f</color>
+    <!-- Editor activity's primary dark color.-->
+    <color name="editorColorPrimaryDark">#009688</color>
+    <!-- Editor activity's accent color.-->
+    <color name="editorColorAccent">#99d5cf</color>
+</resources>

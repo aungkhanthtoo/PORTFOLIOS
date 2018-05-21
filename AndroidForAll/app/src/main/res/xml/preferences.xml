@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/offline_pref_key"
+        android:summaryOff="Off"
+        android:summaryOn="Offline Mode can't show images."
+        android:title="Offline Mode" />
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/noti_pref_key"
+        android:summaryOff="Off"
+        android:summaryOn="Daily notifications will be received."
+        android:title="Daily Recommendations" />
+</PreferenceScreen>

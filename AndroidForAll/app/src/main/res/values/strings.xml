@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AndroidForAll</string>
+    <string name="title_activity_basic">BasicActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noti_pref_key">notification</string>
+    <string name="offline_pref_key">offline</string>
+
+    <string name="facebook_app_id">327956224361319</string>
+    <string name="fb_login_protocol_scheme">fb327956224361319</string>
+
+    <string name="facebook_application_id" translatable="false">327956224361319</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb327956224361319</string>
+
+    <string-array name="questions">
+        <item>Java Language has four types of access modifiers.</item>
+        <item>Activity can exist in the Created State(onCreate() method).</item>
+        <item>Android Studio provides a selection of code samples.</item>
+        <item>One of the most common operators that you\'ll encounter is the simple assignment operator \"=\".</item>
+        <item>The number of attributes depends on the tag.</item>
+        <item>We are using framework method as a black box.</item>
+        <item>Boolean.parseBoolean(\"1\") returns true.</item>
+        <item>In Android Studio, we can set one breakpoint per method.</item>
+        <item>A Button can be borderless.</item>
+    </string-array>
+
+    <string-array name="explanations">
+        <item>Java language has four types: public, protected, private and package-private. Learn more at \nhttps://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html</item>
+        <item>Activity can exist essentially only in three states: resumed(onResume()), paused(onPause), stopped(onStop).Learn more at \nhttps://developer.android.com/guide/components/activities/activity-lifecycle.html#lc</item>
+        <item>The Code Sample Browser in Android Studio helps you find high-quality, Google-provided Android code samples based on the currently highlighted symbol in your project.Learn more at \nhttps://developer.android.com/studio/write/sample-code.html</item>
+        <item>Assignment operators are everywhere.</item>
+        <item>Some tags don’t have attributes at all, others could have many of them. Moreover, some attributes are necessary, other are optional. Learn more at \nhttps://developer.android.com/reference/android/R.attr.html</item>
+        <item>We are using framework method as a black box. Google engineers have already implemented for us.</item>
+        <item>boolean parseBoolean (String s)\n The boolean returned represents the value true if the string argument is not null and is equal, ignoring case, to the string "true".</item>
+        <item>In Android Studio, we can set one breakpoint per method.", 0, "We can add more breakpoints as we want.Learn more at \nhttps://developer.android.com/studio/debug/index.html</item>
+        <item>Borderless buttons resemble basic buttons except that they have no borders or background.Learn more at \nhttps://developer.android.com/guide/topics/ui/controls/button.html#Style")</item>
+    </string-array>
+
+    <integer-array name="answers">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+
+</resources>

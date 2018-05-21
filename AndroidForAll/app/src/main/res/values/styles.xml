@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Material" parent="android:style/Theme.Material">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/grid_transition
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/grid_transition
+        </item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="android:colorControlHighlight">@color/material_lime_a700</item>
+        <item name="colorPrimary">#bbbbbb</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Required for sign-in flow styling -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/material_lime_a700</item>
+
+        <item name="preferenceTheme">
+            @style/AppPreferenceTheme
+        </item>
+    </style>
+
+    <style name="AppPreferenceTheme"
+        parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceFragmentCompatStyle">
+            @style/AppPreferenceFragmentCompatStyle
+        </item>
+    </style>
+    <!-- Custom Style for PreferenceFragmentCompat -->
+    <style name="AppPreferenceFragmentCompatStyle"
+        parent="@style/PreferenceFragment.Material">
+        <item name="android:layout">@layout/user_account_layout</item>
+    </style>
+
+    <style name="QuizTheme" parent="Theme.AppCompat.Dialog.Alert"/>
+
+    <style name="ProfileTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/material_lime_a700</item>
+    </style>
+
+    <style name="GreenTheme" parent="FirebaseUI">
+        <!-- Required for sign-in flow styling -->
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+
+        <item name="colorControlNormal">@color/material_green_500</item>
+        <item name="colorControlActivated">@color/material_lime_a700</item>
+        <item name="colorControlHighlight">@color/material_green_a200</item>
+        <item name="android:windowBackground">@color/material_green_50</item>
+    </style>
+
+
+    <style name="DetailTheme" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+</resources>

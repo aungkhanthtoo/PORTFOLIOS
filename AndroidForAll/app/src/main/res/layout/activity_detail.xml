@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            style="@android:style/TextAppearance.Material.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageDetail"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/description_text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDetail"
+            android:padding="16dp"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/material_green_50" />
+
+        <Button
+            android:id="@+id/button_got_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/description_text_detail"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_action_got_it"
+            android:drawableTint="@color/material_lime_a700"
+            android:text="Got it"
+            android:textColor="@color/material_lime_a700" />
+    </RelativeLayout>
+</ScrollView>
